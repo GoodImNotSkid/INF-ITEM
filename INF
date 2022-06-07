@@ -1,0 +1,14 @@
+_G.autoclick = true --- false to stop
+while _G.autoclick == true do
+     local args = {
+      [1] = {
+      ["manual"] = {
+          ["2"] = 1
+      }
+     }
+   }
+wait(0)
+game:GetService("ReplicatedStorage").Remotes.Search:FireServer()
+
+
+end
